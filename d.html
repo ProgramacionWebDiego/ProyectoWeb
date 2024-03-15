@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#informacion-personal">Información Personal</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#trabajos-realizados">Trabajos Realizados</a></li>
+            <li><a href="#acerca-de-mi">Acerca de Mi</a></li>
+            <li><a href="#valores">Valores</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="inicio">
+        <div class="divinicio">
+            <div class="overlay"></div>
+            <div class="contenido">
+                <h1>Mi Portafolio</h1>
+                <p>Programa como si no hubiera mañana</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="informacion-personal">
+        <div class="inicio2">
+            <br>
+            <h1>Informacion Personal</h1>
+                <table>
+                <tr>
+                    <th id="tabla1">Nombre</th>
+                    <td>Diego Ramirez Bello</td>
+                </tr>
+                <tr>
+                    <th>Fecha de Nacimiento</th>
+                    <td>20/04/2004</td>
+                </tr>
+                <tr>
+                    <th id="tabla1">Carrera Académica</th>
+                    <td>Preparatoria</td>
+                </tr>
+                <tr>
+                    <th>Profesión</th>
+                    <td>Ingeniero en Software</td>
+                </tr>
+                </table>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <div class="Inicio3">
+            <h1>Experiencia</h1>
+            <p>Estas son mis puntos fuertes:</p>
+            <ul>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>JAVA</li>
+                <li>Base de Datos</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="trabajos-realizados">
+        <div class="Inicio3">
+            <h1>Trabajos Realizados</h1>
+            <p>En transcurso de mi vida solo eh realizado 2 paginas web</p>
+            <ul>
+                <li>Página Web</li>
+                <li>Ninguno</li>
+                <li>Ninguno</li>
+                <li>Ninguno</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="acerca-de-mi">
+        <div class="Inicio3">
+            <h1>Acerca de Mi</h1>
+            <p>¡Hola! Soy Diego Ramirez Bello, un entusiasta desarrollador web y estudiante de ingeniería de software. Desde que era joven, siempre me ha fascinado la tecnología y la informática, y descubrí mi pasión por la programación mientras exploraba este mundo apasionante.
+
+                Disfruto cada momento que paso creando páginas web y aplicaciones, combinando diseño y funcionalidad para dar vida a mis ideas en la pantalla. Cada proyecto es una oportunidad para desafiarme a mí mismo y mejorar mis habilidades.
+                
+                Actualmente, estoy inmerso en mi educación en ingeniería de software, donde estoy aprendiendo todo lo que puedo para convertirme en un profesional destacado en este campo. Me dedico por completo a mis estudios y proyectos personales, siempre buscando nuevas formas de crecer y mejorar como desarrollador.
+                
+                Además de programar, me encanta compartir mis conocimientos con otros. Colaboro en proyectos de código abierto, participo en comunidades en línea y disfruto enseñando a otros lo que he aprendido en mi viaje como desarrollador.
+                
+                Cada línea de código que escribo me acerca un paso más a mi objetivo de convertirme en un experto en ingeniería de software. Mi determinación y pasión por la tecnología me impulsan a seguir adelante en este emocionante y siempre cambiante campo del desarrollo web y la ingeniería de software. ¡El futuro me espera, y estoy listo para enfrentarlo con entusiasmo y determinación!</p>
+            <img src="/img/user.png" alt="">
+        </div>
+    </section>
+
+    <section id="valores">
+        <div class="Inicio3">
+            <h1>Valores</h1>
+            <p>Estos son mis valores como ingeniero de software:</p>
+            <ul>
+                <li>Aprendizaje continuo</li>
+                <li>Ética profesional</li>
+                <li>Trabajo en equipo y colaboración</li>
+                <li>Precisión y atención al detalle</li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('#menu a').forEach(item => {
+            item.addEventListener('click', e => {
+                e.preventDefault(); 
+                const href = item.getAttribute('href'); 
+                const section = document.querySelector(href); 
+                section.scrollIntoView({ behavior: 'smooth' }); 
+            });
+        });
+    </script>
+</body>
+</html>
